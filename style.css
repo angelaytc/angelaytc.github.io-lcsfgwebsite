@@ -349,7 +349,7 @@ Extra small devices (phones, 600px and down)
 
   /* Connect =====  */
   .column {
-    width: 50%;
+    width: 25%;
     display: block;
     margin-bottom: 20px;
   }
