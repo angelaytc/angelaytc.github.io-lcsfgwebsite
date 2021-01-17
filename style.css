@@ -1,0 +1,372 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Quasimoda', arial, helvetica, sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  display: inline-flex;
+  padding: 10px;
+  justify-content: space-between;
+  flex-basis: auto;
+  background: #f5fbff;
+}
+
+h1, h2, h3 {
+  font-weight: 400;
+  position: -webkit-sticky;
+}
+
+h1 {
+  font-size: 1.8em;
+  text-align: center;
+  position: -webkit-sticky;
+}
+
+h1:hover {
+      background-color: #000;
+      border-radius: 15px;
+      border-color: #050505;
+      color: #3cff00;
+    }
+
+h2 {
+  font-size: 1.3em;
+  text-align: center;
+  position: -webkit-sticky;
+}
+
+h3 {
+  font-size: 1.1em;
+  text-align: center;
+  position: -webkit-sticky;
+}
+
+p {
+  color: #000;
+  height: 80%;
+  padding: 20px;
+}
+
+
+a {
+  text-decoration: none;
+  color: #3ea1c9;
+}
+
+a:hover{
+  color: #3cff00;
+  background-color: #000;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.wrapper {
+  padding: 10px 1vw;
+}
+
+.inner {
+  background: #fff;
+  color: #000;
+  border: 1px solid #000;
+  height: 100%;
+  padding: 15px;
+  overflow: auto;
+  transition: border-radius 0.2s;
+  position: relative;
+}
+
+.inner:hover {
+  border-radius: 30px;
+  border-width: 5px;
+  border-color: #000;
+  background-color: #dae1e6;
+  color: #000;
+}
+.inner.menu:hover {
+  background-color: #000;
+  border-radius: 20px;
+  border-width: 3px;
+  border-color: #000;
+  color: #3cff00;
+}
+
+.invert {
+  background: #000;
+  color: #ffffff
+}
+
+
+.bio {
+  color: #000;
+  transition: color 0.4s;
+  text-align: center;
+}
+
+/* -==============================--ABOUT---*/
+.container{
+  display:flex;
+}
+
+/* -==============================-- NEWS ---*/
+
+
+  /* ==================================---CONNECT CARD---= */
+
+.button {
+  border-color: #000;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: flexbox;
+  font-size: 18px;
+  cursor: pointer;
+  color: #00b5fc;
+  }
+
+  .button:hover {
+    background-color: #000;
+    border-radius: 20px;
+    border-width: 3px;
+    border-color: #050505;
+    color: #3cff00;
+  }
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px 10px;
+}
+
+.card {
+  padding: 10px;
+  text-align: center;
+  background-color: #e1eaf0;
+  height: 13em;
+  box-sizing: border-box;
+}
+.card:hover {
+  background-color: white;
+}
+/*=================================== LIBRARY - IMAGES  =================================================*/
+
+div.gallery {
+  margin: 10px;
+  border: 2px solid #000;
+  background-color: white;
+}
+
+div.gallery:hover {
+  border: 5px solid #000;
+  border-radius: 20px;
+  color: #3cff00;
+  background-color: #000;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 20px;
+  text-align: center;
+}
+
+.masonry {
+  margin: 0.3em auto;
+  max-width: 768px;
+  column-gap: 0.1em;
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: repeat( auto-fill, minmax( 200px, 1fr ) ); 
+}
+
+/* Blog-CSS */
+.blog-box {
+  padding: 0 0px;
+  transition: .5s;
+  border: 3px solid #00b5fc;
+  margin-bottom: 30px;
+  max-width: 700px;
+}
+
+.blog-box-content {
+  padding: 0 20px 20px;
+  }
+
+/* ------------RESPONSIVE INDEX ---------------- */ 
+
+@media only screen and (max-width: 1320px) {
+
+  .rotate {
+    transform-origin: center;
+    transform: rotate(90deg);
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
+  }
+  
+  h4.rotate {
+    margin-top: 5px;
+    font-size: calc(0.8em + 0.8vh);
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  #a {
+    flex-grow: 4;
+    min-width: 15%;
+    max-width: 16%;
+  }
+  
+  #b {
+    flex-grow: 16;
+  }
+  
+  
+  #d {
+    flex-grow: 1.4;
+    max-width: 100px;
+  }
+    }
+  
+  @media only screen and (max-width: 960px) {
+    body {
+      display: flex;
+      flex-direction: column;
+      height: unset;
+      min-height: 100vh;
+    }
+  
+    .wrapper {
+      min-width: auto;
+      max-width: none;
+      width: 100%;
+    }
+  
+    #a {
+      flex-grow: 1;
+      min-width: auto;
+      max-width: none;
+      width: 100%;
+    }
+  
+    #a .invert, #a .bio, #a:hover {
+      border: none;
+      background: #ffffff;
+      color: #000 !important;
+    }
+  
+    #b {
+      flex-grow: 1;
+      min-width: auto;
+      max-width: none;
+      width: 100%;
+    }
+  
+  
+    #d {
+      flex-grow: 1;
+      min-width: auto;
+      max-width: none;
+      width: 100%;
+    }
+  
+    .rotate {
+      transform: none;
+    }
+  
+    p.rotate {
+      margin: 0;
+      text-align: center;
+      font-size: 1rem;
+      margin: 5px 0px 15px;
+    }
+  }
+  
+/* ============== RESPONSIVE OTHER ========================================  */
+
+Extra small devices (phones, 600px and down) 
+@media only screen and (max-width: 600px) {
+
+    
+  /* Library =====  */
+  .masonry {
+    column-count: 1;
+  }
+
+  /* Story Page =====  */
+  .columnstory {
+    float: left;
+    width: 100%;
+    padding: 10px 10px;
+  }
+  
+  /* Connect =====  */
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* ==================== SMALL devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+  
+  /* Connect =====  */
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+
+/*==================== MEDIUM devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  
+  /* Library =====  */
+  .masonry {
+    column-count: 2;
+  }
+
+  /* Connect =====  */
+  .column {
+    width: 50%;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+    /* Story Page =====  */
+    .columnstory {
+      float: left;
+      width: 50%;
+      padding: 10px 10px;
+    }
+}
+
+/* ==================== LARGE devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+   
+  /* Library =====  */
+  .masonry {
+    column-count: 3;
+  }
+}
