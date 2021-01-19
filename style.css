@@ -326,17 +326,6 @@ Extra small devices (phones, 600px and down)
   }
 }
 
-/* ==================== SMALL devices (portrait tablets and large phones, 600px and up) */
-
-@media only screen and (min-width: 600px) {
-  
-  /* Connect =====  */
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
 
 
 /*==================== MEDIUM devices (landscape tablets, 768px and up) */
@@ -349,7 +338,7 @@ Extra small devices (phones, 600px and down)
 
   /* Connect =====  */
   .column {
-    width: 100%;
+    width: 50%;
     display: block;
     margin-bottom: 20px;
   }
