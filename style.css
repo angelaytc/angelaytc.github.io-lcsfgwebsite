@@ -113,9 +113,6 @@ img {
   display:flex;
 }
 
-/* -==============================-- NEWS ---*/
-
-
   /* ==================================---CONNECT CARD---= */
 
 .button {
@@ -302,11 +299,10 @@ div.desc {
   
 /* ============== RESPONSIVE OTHER ========================================  */
 
-Extra small devices (phones, 600px and down) 
-@media only screen and (max-width: 600px) {
+/* ==================== SMALL devices (portrait tablets and large phones) */
 
-    
-  /* Library =====  */
+@media only screen and (max-width: 767px) {
+    /* Library =====  */
   .masonry {
     column-count: 1;
   }
@@ -317,13 +313,9 @@ Extra small devices (phones, 600px and down)
     width: 100%;
     padding: 10px 10px;
   }
-  
-/* ==================== SMALL devices (portrait tablets and large phones, 600px and up) */
-
-@media only screen and (max-width: 768px) {
-  
   /* Connect =====  */
   .column {
+    float: left;
     width: 100%;
     display: block;
     margin-bottom: 20px;
