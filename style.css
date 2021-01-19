@@ -318,6 +318,10 @@ Extra small devices (phones, 600px and down)
     padding: 10px 10px;
   }
   
+/* ==================== SMALL devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (max-width: 768px) {
+  
   /* Connect =====  */
   .column {
     width: 100%;
@@ -325,7 +329,6 @@ Extra small devices (phones, 600px and down)
     margin-bottom: 20px;
   }
 }
-
 
 
 /*==================== MEDIUM devices (landscape tablets, 768px and up) */
