@@ -201,104 +201,6 @@ div.desc {
 
 /* ------------RESPONSIVE INDEX ---------------- */ 
 
-@media only screen and (max-width: 1320px) {
-
-  .rotate {
-    transform-origin: center;
-    transform: rotate(90deg);
-  }
-  
-  .menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    overflow: hidden;
-  }
-  
-  h4.rotate {
-    margin-top: 5px;
-    font-size: calc(0.8em + 0.8vh);
-  }
-  
-  .tags {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  #a {
-    flex-grow: 4;
-    min-width: 15%;
-    max-width: 16%;
-  }
-  
-  #b {
-    flex-grow: 16;
-  }
-  
-  
-  #d {
-    flex-grow: 1.4;
-    max-width: 100px;
-  }
-    }
-  
-  @media only screen and (max-width: 960px) {
-    body {
-      display: flex;
-      flex-direction: column;
-      height: unset;
-      min-height: 100vh;
-    }
-  
-    .wrapper {
-      min-width: auto;
-      max-width: none;
-      width: 100%;
-    }
-  
-    #a {
-      flex-grow: 1;
-      min-width: auto;
-      max-width: none;
-      width: 100%;
-    }
-  
-    #a .invert, #a .bio, #a:hover {
-      border: none;
-      background: #ffffff;
-      color: #000 !important;
-    }
-  
-    #b {
-      flex-grow: 1;
-      min-width: auto;
-      max-width: none;
-      width: 100%;
-    }
-  
-  
-    #d {
-      flex-grow: 1;
-      min-width: auto;
-      max-width: none;
-      width: 100%;
-    }
-  
-    .rotate {
-      transform: none;
-    }
-  
-    p.rotate {
-      margin: 0;
-      text-align: center;
-      font-size: 1rem;
-      margin: 5px 0px 15px;
-    }
-  }
-  
-/* ============== RESPONSIVE OTHER ========================================  */
-
 /* ==================== SMALL devices (portrait tablets and large phones) */
 
 @media only screen and (max-width: 767px) {
@@ -325,10 +227,10 @@ div.desc {
 
 /*==================== MEDIUM devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  
+
   /* Library =====  */
   .masonry {
-    column-count: 2;
+    column-count: 3;
   }
 
   /* Connect =====  */
@@ -344,13 +246,4 @@ div.desc {
       width: 50%;
       padding: 10px 10px;
     }
-}
-
-/* ==================== LARGE devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-   
-  /* Library =====  */
-  .masonry {
-    column-count: 3;
-  }
 }
