@@ -200,9 +200,7 @@ div.desc {
   }
 
 /* ------------RESPONSIVE INDEX ---------------- */ 
-
 @media only screen and (max-width: 1320px) {
-
   .rotate {
     transform-origin: center;
     transform: rotate(90deg);
@@ -296,15 +294,14 @@ div.desc {
       margin: 5px 0px 15px;
     }
   }
-
+  
+/* ============== RESPONSIVE OTHER ========================================  */
 /* ==================== SMALL devices (portrait tablets and large phones) */
-
 @media only screen and (max-width: 767px) {
     /* Library =====  */
   .masonry {
     column-count: 1;
   }
-
   /* Story Page =====  */
   .columnstory {
     float: left;
@@ -319,27 +316,31 @@ div.desc {
     margin-bottom: 20px;
   }
 }
-
-
 /*==================== MEDIUM devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
+  
   /* Library =====  */
   .masonry {
-    column-count: 3;
+    column-count: 2;
   }
-
   /* Connect =====  */
   .column {
     width: 50%;
     display: block;
     margin-bottom: 20px;
   }
-
     /* Story Page =====  */
     .columnstory {
       float: left;
       width: 50%;
       padding: 10px 10px;
     }
+}
+/* ==================== LARGE devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+   
+  /* Library =====  */
+  .masonry {
+    column-count: 3;
+  }
 }
